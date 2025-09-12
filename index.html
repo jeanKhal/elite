@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Elite Guard & Clean - L'élite de la sécurité à vos côtés</title>
+    <meta name="description" content="Elite Guard & Clean - L'élite de la sécurité à vos côtés, pour que chaque lieu reflète l'excellence. Services de sécurité et nettoyage professionnels à Kinshasa.">
+    <meta name="keywords" content="sécurité, gardiennage, nettoyage, Kinshasa, RDC, protection, surveillance, alarme, elite">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Elite Guard & Clean" class="logo-img">
+                <span>Elite Guard & Clean</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#calculateur">Devis</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button id="langBtn" onclick="toggleLanguage()">FR</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">L'élite de la sécurité</span><br>
+                à vos côtés
+            </h1>
+            <p class="hero-subtitle">
+                Pour que chaque lieu reflète l'excellence.<br>
+                Elite Guard & Clean - Services de sécurité et nettoyage professionnels à Kinshasa.
+                Des professionnels d'élite qualifiés et certifiés à votre service 24h/24, 7j/7.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Demander un Devis</a>
+                <a href="#services" class="btn btn-secondary">Nos Services</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Clients à Kinshasa</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Disponibilité</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Années d'Expérience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Agents Certifiés</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services d'Élite</h2>
+                <p>Des solutions complètes de sécurité et nettoyage adaptées à vos besoins</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Gardiennage</h3>
+                    <p>Surveillance continue de vos locaux avec des agents formés et équipés des dernières technologies.</p>
+                    <ul>
+                        <li>Surveillance 24h/24</li>
+                        <li>Agents certifiés</li>
+                        <li>Rondes régulières</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Vidéosurveillance</h3>
+                    <p>Systèmes de caméras haute définition avec monitoring à distance et stockage sécurisé.</p>
+                    <ul>
+                        <li>Caméras HD 4K</li>
+                        <li>Vision nocturne</li>
+                        <li>Stockage cloud</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Contrôle d'Accès</h3>
+                    <p>Solutions modernes de gestion des accès avec badges, biométrie et monitoring en temps réel.</p>
+                    <ul>
+                        <li>Badges électroniques</li>
+                        <li>Reconnaissance faciale</li>
+                        <li>Rapports détaillés</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Alarme & Détection</h3>
+                    <p>Systèmes d'alarme avancés avec détection d'intrusion et intervention rapide.</p>
+                    <ul>
+                        <li>Détecteurs de mouvement</li>
+                        <li>Capteurs de bris de glace</li>
+                        <li>Intervention 24h/24</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Sécurité Événementielle</h3>
+                    <p>Protection de vos événements avec des équipes spécialisées et du matériel professionnel.</p>
+                    <ul>
+                        <li>Événements privés</li>
+                        <li>Manifestations publiques</li>
+                        <li>Équipes mobiles</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Sécurité d'Entreprise</h3>
+                    <p>Solutions complètes pour la protection de vos locaux professionnels et de vos employés.</p>
+                    <ul>
+                        <li>Audit de sécurité</li>
+                        <li>Formation du personnel</li>
+                        <li>Plan d'urgence</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Services de Nettoyage</h3>
+                    <p>Nettoyage professionnel pour que chaque lieu reflète l'excellence et la propreté.</p>
+                    <ul>
+                        <li>Nettoyage quotidien</li>
+                        <li>Nettoyage industriel</li>
+                        <li>Désinfection complète</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Entretien & Maintenance</h3>
+                    <p>Services d'entretien et de maintenance pour maintenir vos espaces en parfait état.</p>
+                    <ul>
+                        <li>Entretien régulier</li>
+                        <li>Maintenance préventive</li>
+                        <li>Réparations rapides</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculateur de Devis Section -->
+    <section id="calculateur" class="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Calculateur de Devis</h2>
+                <p>Obtenez une estimation personnalisée de vos besoins en sécurité</p>
+            </div>
+            <div class="calculator-content">
+                <div class="calculator-form">
+                    <h3>Configurez votre service</h3>
+                    <div class="form-group">
+                        <label>Type de service :</label>
+                        <select id="serviceType">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="gardiennage">Gardiennage</option>
+                            <option value="videosurveillance">Vidéosurveillance</option>
+                            <option value="controle-acces">Contrôle d'Accès</option>
+                            <option value="alarme">Alarme & Détection</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Superficie (m²) :</label>
+                        <input type="number" id="surface" placeholder="Ex: 500">
+                    </div>
+                    <div class="form-group">
+                        <label>Durée du contrat (mois) :</label>
+                        <select id="duree">
+                            <option value="6">6 mois</option>
+                            <option value="12" selected>12 mois</option>
+                            <option value="24">24 mois</option>
+                            <option value="36">36 mois</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Niveau de sécurité :</label>
+                        <select id="niveau">
+                            <option value="standard">Standard</option>
+                            <option value="renforce">Renforcé</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+                    <button onclick="calculateQuote()" class="btn btn-primary">Calculer le Devis</button>
+                </div>
+                <div class="calculator-result">
+                    <h3>Estimation</h3>
+                    <div id="quoteResult" class="quote-display">
+                        <p>Sélectionnez vos options pour voir l'estimation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section -->
+    <section id="temoignages" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Témoignages Clients</h2>
+                <p>Ce que disent nos clients à Kinshasa</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excellent service de gardiennage. Les agents sont professionnels et toujours ponctuels. Je recommande vivement SecureGuard RDC."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jean-Pierre M.</h4>
+                            <span>Directeur, Entreprise de Construction</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Système de vidéosurveillance très efficace. L'équipe technique est compétente et réactive. Service client au top !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Marie K.</h4>
+                            <span>Gérante, Supermarché</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Depuis que nous avons fait appel à SecureGuard RDC, nous nous sentons en sécurité. Service 24h/24 impeccable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Paul M.</h4>
+                            <span>Propriétaire, Résidence</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat en Direct -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header">
+            <h4>💬 Chat en Direct</h4>
+            <button onclick="toggleChat()" class="chat-toggle">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <p>Bonjour ! Comment puis-je vous aider avec vos besoins en sécurité ?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Tapez votre message...">
+            <button onclick="sendMessage()">📤</button>
+        </div>
+    </div>
+    <button id="chatButton" onclick="toggleChat()" class="chat-button">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Pourquoi Choisir Elite Guard & Clean ?</h2>
+                    <p class="about-intro">
+                        Depuis plus de 8 ans, Elite Guard & Clean est votre partenaire d'élite 
+                        pour tous vos besoins en sécurité, gardiennage et nettoyage à Kinshasa et dans toute la RDC.
+                        Nous comprenons les défis spécifiques de sécurité et d'hygiène en République Démocratique du Congo.
+                        Notre mission : que chaque lieu reflète l'excellence.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Certification & Agrément</h4>
+                                <p>Agréés par les autorités compétentes avec toutes les certifications requises.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Équipe Professionnelle</h4>
+                                <p>Des agents formés, expérimentés et régulièrement mis à jour sur les nouvelles technologies.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Disponibilité 24/7</h4>
+                                <p>Service client et intervention d'urgence disponibles à tout moment.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Technologies Avancées</h4>
+                                <p>Équipements de pointe et solutions innovantes pour une sécurité optimale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Équipe SecureGuard Pro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-Nous</h2>
+                <p>Obtenez un devis personnalisé pour vos besoins de sécurité</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+243 81 234 5678</p>
+                                <p>+243 99 876 5432</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@secureguardrdc.cd</p>
+                                <p>info@secureguardrdc.cd</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>123 Avenue de la Paix<br>Gombe, Kinshasa, RDC</p>
+                            </div>
+                        </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun - Ven: 8h00 - 18h00<br>Urgences: 24h/24</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telephone" name="telephone" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="gardiennage">Gardiennage</option>
+                            <option value="videosurveillance">Vidéosurveillance</option>
+                            <option value="controle-acces">Contrôle d'Accès</option>
+                            <option value="alarme">Alarme & Détection</option>
+                            <option value="evenementiel">Sécurité Événementielle</option>
+                            <option value="entreprise">Sécurité d'Entreprise</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Décrivez vos besoins..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer la Demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Elite Guard & Clean" class="logo-img">
+                    <span>Elite Guard & Clean</span>
+                </div>
+                <p>L'élite de la sécurité à vos côtés, pour que chaque lieu reflète l'excellence. Votre partenaire d'élite à Kinshasa depuis 2016.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Gardiennage</a></li>
+                        <li><a href="#services">Vidéosurveillance</a></li>
+                        <li><a href="#services">Contrôle d'Accès</a></li>
+                        <li><a href="#services">Alarme & Détection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Presse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +243 81 234 5678</li>
+                        <li><i class="fas fa-envelope"></i> contact@secureguardrdc.cd</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de la Paix, Gombe, Kinshasa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elite Guard & Clean. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions Légales</a>
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

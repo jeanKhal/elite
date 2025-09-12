@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo SecureGuard RDC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .logo-container {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #000000 0%, #333333 50%, #ff6600 100%);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin: 0 auto;
+        }
+        .shield {
+            width: 120px;
+            height: 140px;
+            background: #ff6600;
+            border-radius: 20px 20px 60px 60px;
+            position: relative;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .shield::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: linear-gradient(45deg, #ff6600, #ff8533);
+            border-radius: 25px 25px 65px 65px;
+            z-index: -1;
+        }
+        .shield-icon {
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .company-name {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .location {
+            color: #ff6600;
+            font-size: 12px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .stars {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #ff6600;
+            font-size: 20px;
+        }
+        .export-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container" id="logo">
+        <div class="stars">⭐</div>
+        <div class="shield">
+            <div class="shield-icon">🛡️</div>
+        </div>
+        <div class="company-name">Elite Guard</div>
+        <div class="company-name" style="font-size: 14px;">& Clean</div>
+        <div class="location">Kinshasa • L'élite de la sécurité</div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="export-btn" onclick="exportToPDF()">Exporter en PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        function exportToPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            // Créer le logo en SVG
+            const svg = `
+                <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#333333;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff6600;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff8533;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                <rect width="300" height="300" rx="20" fill="url(#bg)"/>
+                <text x="280" y="40" font-size="20" fill="#ff6600">⭐</text>
+                <path d="M90 80 L150 60 L210 80 L210 140 L150 180 L90 140 Z" fill="url(#shield)" rx="20"/>
+                <text x="150" y="100" text-anchor="middle" font-size="50" fill="white">🛡️</text>
+                <text x="150" y="220" text-anchor="middle" font-size="18" fill="white" font-weight="bold">Elite Guard</text>
+                <text x="150" y="240" text-anchor="middle" font-size="14" fill="white" font-weight="bold">& Clean</text>
+                <text x="150" y="260" text-anchor="middle" font-size="12" fill="#ff6600">Kinshasa • L'élite de la sécurité</text>
+                </svg>
+            `;
+            
+            // Convertir SVG en image et ajouter au PDF
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            
+            img.onload = function() {
+                canvas.width = 300;
+                canvas.height = 300;
+                ctx.drawImage(img, 0, 0);
+                
+                const imgData = canvas.toDataURL('image/png');
+                doc.addImage(imgData, 'PNG', 50, 50, 100, 100);
+                doc.save('Elite-Guard-Clean-Logo.pdf');
+            };
+            
+            const svgBlob = new Blob([svg], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(svgBlob);
+            img.src = url;
+        }
+    </script>
+</body>
+</html>
