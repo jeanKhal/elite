@@ -212,8 +212,7 @@ function calculateQuote() {
         'videosurveillance': 1.8,
         'controle-acces': 3.2,
         'alarme': 1.5,
-        'nettoyage': 1.2,
-        'entretien': 1.8
+        'intervention': 4.0
     };
     
     // Multiplicateurs selon le niveau
